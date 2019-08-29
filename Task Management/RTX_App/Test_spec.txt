@@ -1,0 +1,7 @@
+Write test task specification in this file.
+
+task1 --> task periodically prints task status of each task in the system.
+task 2, 3 ,4 --> allocate a fixed size,makes sure it's allocated and waits for 10 units and then deallocate it.
+
+task1 prints out the status of the running tasks
+other tasks try to allocate memory from memory pool, if successful we print out it was successful, if not then the task gets paused (waiting for memory) until that memory becomes available. the task then frees the memory using os_mem_free() 
